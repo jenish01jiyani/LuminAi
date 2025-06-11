@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--luminai-elements-editor-backgroundColor, var(--luminai-elements-bg-depth-1));
+  --cm-textColor: var(--luminai-elements-editor-textColor, var(--luminai-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--luminai-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--luminai-elements-editor-gutter-textColor, var(--luminai-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--luminai-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--luminai-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--luminai-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--luminai-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--luminai-elements-editor-cursorColor, var(--luminai-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--luminai-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--luminai-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--luminai-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--luminai-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--luminai-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--luminai-elements-editor-panels-borderColor, var(--luminai-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--luminai-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--luminai-elements-editor-search-textColor, var(--luminai-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--luminai-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --luminai-elements-editor-search-closeButton-backgroundColorHover,
+    var(--luminai-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --luminai-elements-editor-search-closeButton-textColor,
+    var(--luminai-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --luminai-elements-editor-search-closeButton-textColorHover,
+    var(--luminai-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --luminai-elements-editor-search-button-backgroundColor,
+    var(--luminai-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --luminai-elements-editor-search-button-backgroundColorHover,
+    var(--luminai-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--luminai-elements-editor-search-button-textColor, var(--luminai-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --luminai-elements-editor-search-button-textColorHover,
+    var(--luminai-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--luminai-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--luminai-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --luminai-elements-editor-search-button-borderColorFocused,
+    var(--luminai-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--luminai-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--luminai-elements-editor-search-input-textColor, var(--luminai-elements-textPrimary));
+  --cm-search-input-borderColor: var(--luminai-elements-editor-search-input-borderColor, var(--luminai-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --luminai-elements-editor-search-input-borderColorFocused,
+    var(--luminai-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--luminai-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--luminai-elements-editor-tooltip-textColor, var(--luminai-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --luminai-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --luminai-elements-editor-tooltip-textColorSelected,
+    var(--luminai-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--luminai-elements-editor-tooltip-borderColor, var(--luminai-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--luminai-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --luminai-elements-editor-gutter-textColor: #237893;
+  --luminai-elements-editor-gutter-activeLineTextColor: var(--luminai-elements-textPrimary);
+  --luminai-elements-editor-foldGutter-textColorHover: var(--luminai-elements-textPrimary);
+  --luminai-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --luminai-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --luminai-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --luminai-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--luminai-elements-bg-depth-2);
+  --luminai-elements-editor-gutter-textColor: var(--luminai-elements-textTertiary);
+  --luminai-elements-editor-gutter-activeLineTextColor: var(--luminai-elements-textSecondary);
+  --luminai-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --luminai-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --luminai-elements-editor-foldGutter-textColorHover: var(--luminai-elements-textPrimary);
+  --luminai-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --luminai-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --luminai-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}

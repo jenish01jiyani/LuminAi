@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: luminai.new related issues
+    url: https://github.com/stackblitz/luminai.new/issues/new/choose
+    about: Report issues related to luminai.new (not luminai.diy)
+  - name: Chat
+    url: https://thinktank.ottomator.ai
+    about: Ask questions and discuss with other luminai.diy users.
